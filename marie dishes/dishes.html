@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marie dishes</title>
+    <link rel="stylesheet" href="dishes.css">
+</head>
+<header>
+    <div class="container">
+        <div class="hero">marie<span> dishes</span></div>
+        <img src="th-1894511026.jpeg">
+    </div>
+</header>
+<body>
+    <div class=" ">
+        <ul>
+            <li>
+                <a href="">Home</a>
+                <a href="">Dishes</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="Sections">
+        <h2>Home</h2>
+        <p>Welcome to our culinary oasis, where every bite tells a story of tradition, flavor, and home-cooked comfort! <br>Step into the heart of our eatery and indulge in the rich tapestry of Kenyan cuisine. At our table, we celebrate the essence of home with every dish, bringing you the authentic taste of beloved classics like omena and ugali.<br>
+
+            Discover the magic of simplicity fused with exquisite taste as you delve into our menu filled with delicacies that capture the essence of Kenya's culinary heritage. From the delicate crunch of perfectly seasoned omena to the comforting embrace of warm, hearty ugali, each bite is a journey through the flavors of our land.
+            
+            At our eatery, we're not just serving food; we're crafting experiences that evoke nostalgia, warmth, and a sense of belonging. Whether you're a seasoned connoisseur or a curious newcomer, there's something for everyone to savor and enjoy.
+            
+            Join us as we invite you to experience the true essence of Kenyan dining – where every meal is a celebration of home, heritage, and the joy of sharing good food with great company. Welcome home to a culinary adventure like no other!</p>
+        
+    </div>
+    <div class="dishes">
+        <h2>Dishes</h2>
+    </div>
+    <div id="imageContainer">
+        <div class="images">
+            <img src="th-1894511026.jpeg">
+            <img src="th-2362386106.jpeg">
+            <img src="th-2528382168.jpeg">
+            <img src="th-2884742720.jpeg">
+            <img src="th-150702774.jpeg">
+            <img src="th-3138579786.jpeg">
+            <img src="th-4099165594.jpeg">
+        </div>
+    </div>
+    
+    <div class="about">
+        <h2>About</h2>
+        <p>Welcome to Marie Dishes, where our passion for authentic Kenyan cuisine meets a commitment to community and convenience. Founded with a love for sharing the flavors of home, we're delighted to bring a taste of Kenya's culinary heritage to your doorstep.
+            <br>At Marie Dishes, we believe in making delicious food accessible to all. That's why we're thrilled to offer free delivery for our esteemed MNUC comrades. <br> From the bustling streets of Mutomo to of Bold-Shepherd, we're dedicated to ensuring that no one misses out on the joy of our delectable dishes.
+            
+            Our commitment to quality extends beyond the kitchen, the services are woven into every aspect of our service.<br>Whether you're craving the comforting embrace of ugali or the savory delight of omena, rest assured that your meal will be prepared with the utmost care and attention to detail.
+            <br> Join us on a journey of culinary exploration and community connection. Whether you're dining in or enjoying the convenience of our free delivery service, we're here to make every experience unforgettable. Thank you for choosing Marie Dishes – where good food and great company come together in perfect harmony.</p>
+    </div>
+    <div class="contact">
+        <h2>Contact</h2>
+        <p>For inquiries, please call <a href="tel:+254743874690">0743874690</a>.</p>
+
+        <a href="https://wa.me/254783845747/?text=Welcome%20to%20Marie%20Dishes%20today,%20how%20may%20we%20help%20you%3F" target="_blank">Contact us on WhatsApp</a>
+        
+    </div>
+    <footer>
+        <p>&copy JeanMarie Solutions</p>
+        <p>powered by Marie technologies - 2024</p>
+    </footer>
+
+    <script>
+        var images = document.querySelectorAll('#imageContainer img');
+        var currentIndex = 0;
+
+        function showNextImage(){
+            images[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1)% images.length;
+            images[currentIndex].style.display = 'block';
+        }
+        // change image after 4 seconds
+        setInterval(showNextImage, 4000);
+    </script>
+</body>
+</html>
